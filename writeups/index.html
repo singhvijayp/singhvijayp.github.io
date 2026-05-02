@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writeups • Vijay Pratap Singh</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
-      light mode
-    </button>
 
-    <main class="page">
-      <a href="/" class="back-link">Back</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writeups • Vijay Pratap Singh</title>
+  <link rel="icon" href="/assets/favicon.jpg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-      <h1 class="page-title">Write-ups</h1>
-      <p class="page-description">
-        You can follow my stories on
-        <a href="https://medium.com/singhvijayp" target="_blank" rel="noreferrer"
-          >Medium</a>
-      </p>
+<body>
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
+    light mode
+  </button>
 
-      <span class="section-label">Highlights</span>
+  <main class="page" data-post-index>
+    <a href="/" class="back-link">Back</a>
 
-      <ul class="highlights">
-        <li>
-          <a href="/writeups/journey-start.html">
-            How I started my journey in cybersecurity
-          </a>
-          <span class="post-date"> — 2026-03-02</span>
-        </li>
-      </ul>
-    </main>
+    <h1 class="page-title">Write-ups</h1>
+    <p class="page-description">
+      You can follow my stories on
+      <a href="https://medium.com/@singhvijayp" target="_blank" rel="noreferrer">Medium</a>
+    </p>
 
-    <script src="/js/script.js"></script>
-  </body>
+    <span class="section-label">Latest Posts</span>
+
+    <div class="list-controls">
+      <div class="sort-row">
+        <label for="writeupSort">Sort by</label>
+        <select id="writeupSort" class="sort-select" data-post-sort>
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="title-asc">Title (A–Z)</option>
+          <option value="author-asc">Author (A–Z)</option>
+        </select>
+      </div>
+      <div class="tag-bar" data-tag-bar aria-label="Filter write-ups by tag"></div>
+    </div>
+
+    <ul class="highlights" data-post-items>
+      <li data-sort-date="2026-03-02" data-author="Vijay Pratap Singh"
+        data-title="How I started my journey in cybersecurity" data-tags="career,beginners">
+        <a href="/writeups/journey-start.html">
+          How I started my journey in cybersecurity
+        </a>
+        <span class="post-list-meta">
+          <span class="post-list-author">by Vijay Pratap Singh</span>
+          <span class="post-tags-inline">
+            <a class="tag" href="?tag=career">career</a>
+            <a class="tag" href="?tag=beginners">beginners</a></span>
+          <span class="post-date"> on 2026-03-02</span>
+        </span>
+      </li>
+    </ul>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
-

@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects • Vijay Pratap Singh</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
-      light mode
-    </button>
 
-    <main class="page">
-      <a href="/" class="back-link">Back</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects • Vijay Pratap Singh</title>
+  <link rel="icon" href="/assets/favicon.jpg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-      <h1 class="page-title">Projects</h1>
-      <p class="page-description">
-        A collection of projects demonstrating practical problem-solving,
-        technical learning and real-world application of core computing concepts.
-      </p>
+<body>
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
+    light mode
+  </button>
 
-      <span class="section-label">Highlights</span>
+  <main class="page">
+    <a href="/" class="back-link">Back</a>
 
-      <div class="project-card">
-        <div
-          class="project-image"
-          style="background-image: url('/assets/images/project-1.png')"
-        ></div>
-        <div class="project-content">
-          <h2 class="project-content-title">ApexGrid - Motorsports Management System</h2>
-          <p class="project-content-text">
-            A full-stack web application designed to manage cars, teams, drivers 
-            and performance statistics, featuring authentication, dashboards and structured data management.
-          </p>
+    <h1 class="page-title">Projects</h1>
+    <p class="page-description">
+      A collection of projects demonstrating practical problem-solving,
+      technical learning and real-world application of core computing concepts.
+    </p>
+
+    <span class="section-label">Highlights</span>
+
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('/assets/images/project-1.png')" role="img"
+        aria-label="ApexGrid project preview"></div>
+      <div class="project-content">
+        <h2 class="project-content-title">ApexGrid - Motorsports Management System</h2>
+        <p class="project-content-text">
+          A full-stack web application designed to manage cars, teams, drivers
+          and performance statistics featuring authentication, dashboards and structured data management.
+        </p>
+        <div class="project-stack">
+          <p class="project-stack-label">Tech stack</p>
+          <ul class="stack-pills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/singhvijayp/ApexGrid" target="_blank" rel="noreferrer">Repository</a>
         </div>
       </div>
-      <div class="project-card">
-        <div
-          class="project-image"
-          style="background-image: url('/assets/images/project-2.png')"
-        ></div>
-        <div class="project-content">
-          <h2 class="project-content-title">RapidFetch - Fast CLI Downloads</h2>
-          <p class="project-content-text">
-            Lightweight CLI tool for fast file downloads with resumable downloads and speed limits.
-            Powered by curl. Easy and efficient.
-          </p>
+    </div>
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('/assets/images/project-2.png')" role="img"
+        aria-label="RapidFetch project preview"></div>
+      <div class="project-content">
+        <h2 class="project-content-title">RapidFetch - Fast CLI Downloads</h2>
+        <p class="project-content-text">
+          Lightweight CLI tool for fast file downloads with resumable downloads and speed limits.
+          Powered by curl. Easy and efficient.
+        </p>
+        <div class="project-stack">
+          <p class="project-stack-label">Tech stack</p>
+          <ul class="stack-pills">
+            <li>Curl</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/singhvijayp/rapidfetch" target="_blank" rel="noreferrer">Repository</a>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script src="/js/script.js"></script>
-  </body>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
-

@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogs • Vijay Pratap Singh</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
-      light mode
-    </button>
 
-    <main class="page">
-      <a href="/" class="back-link">Back</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs • Vijay Pratap Singh</title>
+  <link rel="icon" href="/assets/favicon.jpg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-      <h1 class="page-title">Blogs</h1>
-      <p class="page-description">
-        Shorter updates, thoughts, and experiments. You can list your posts
-        here or link out to another platform.
-      </p>
+<body>
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle color mode">
+    light mode
+  </button>
 
-      <span class="section-label">Latest posts</span>
+  <main class="page" data-post-index>
+    <a href="/" class="back-link">Back</a>
 
-      <ul class="highlights">
-        <li>
-          <a href="/blogs/first-post.html">Sample blog post</a>
-          <span class="post-date"> — 2026-03-02</span>
-        </li>
-        <li>
-          <a href="/blogs/second-post.html">Another update or note</a>
-          <span class="post-date"> — 2026-02-15</span>
-        </li>
-      </ul>
-    </main>
+    <h1 class="page-title">Blogs</h1>
+    <p class="page-description">
+      Shorter updates, thoughts, and experiments. You can list your posts
+      here or link out to another platform.
+    </p>
 
-    <script src="/js/script.js"></script>
-  </body>
+    <span class="section-label">Latest posts</span>
+
+    <div class="list-controls">
+      <div class="sort-row">
+        <label for="blogSort">Sort by</label>
+        <select id="blogSort" class="sort-select" data-post-sort>
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="title-asc">Title (A–Z)</option>
+          <option value="author-asc">Author (A–Z)</option>
+        </select>
+      </div>
+      <div class="tag-bar" data-tag-bar aria-label="Filter posts by tag"></div>
+    </div>
+
+    <ul class="highlights" data-post-items>
+      <li data-sort-date="2026-03-02" data-author="Vijay Pratap Singh" data-title="Sample blog post"
+        data-tags="notes,meta">
+        <a href="/blogs/first-post.html">Sample blog post</a>
+        <span class="post-list-meta">
+          <span class="post-list-author">by Vijay Pratap Singh</span>
+          <span class="post-tags-inline">
+            <a class="tag" href="?tag=notes">notes</a>
+            <a class="tag" href="?tag=meta">meta</a></span>
+          <span class="post-date"> on 2026-03-02</span>
+        </span>
+      </li>
+      <li data-sort-date="2026-02-15" data-author="Vijay Pratap Singh" data-title="Another update or note"
+        data-tags="update,brief">
+        <a href="/blogs/second-post.html">Another update or note</a>
+        <span class="post-list-meta">
+          <span class="post-list-author">by Vijay Pratap Singh</span>
+          <span class="post-tags-inline">
+            <a class="tag" href="?tag=update">update</a>
+            <a class="tag" href="?tag=brief">brief</a>
+          </span>
+          <span class="post-date"> on 2026-02-15</span>
+        </span>
+      </li>
+    </ul>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
-

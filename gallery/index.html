@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gallery — photos with optional captions. Replace images under assets/images/."
+    />
     <title>Gallery • Vijay Pratap Singh</title>
+    <link rel="icon" href="/assets/favicon.jpg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -16,26 +21,40 @@
 
       <h1 class="page-title">Gallery</h1>
       <p class="page-description">
-        A small selection of photos. Replace the placeholders with your own
-        images inside <code>assets/images/</code>.
+        A scratchpad for snapshots that do not belong on the project pages—travel, workspaces, experiments.
+        <!-- Swap in your own JPG or WEBP paths under <code>assets/images/</code>. Below each thumbnail you may add a
+        <code>&lt;figcaption&gt;</code>; omit it entirely when you do not need a caption for that shot. -->
       </p>
 
       <span class="section-label">Photos</span>
 
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="/assets/images/photo-1.jpg" alt="Gallery photo 1" />
-        </div>
-        <div class="gallery-item">
-          <img src="/assets/images/photo-2.jpg" alt="Gallery photo 2" />
-        </div>
-        <div class="gallery-item">
-          <img src="/assets/images/photo-3.jpg" alt="Gallery photo 3" />
-        </div>
+        <figure class="gallery-item">
+          <img
+            src="/assets/images/photo-1.jpg"
+            alt="Workspace desk with laptop and peripherals"
+          />
+          <figcaption class="gallery-caption">
+            Late-night hacking setup—coffee, headphones, Burp quietly judging my life choices from the toolbar.
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="/assets/images/photo-2.jpg" alt="Outdoor evening sky over city silhouette" />
+          <figcaption class="gallery-caption">
+            Golden hour somewhere between “I should patch this” and “five more minutes on the roof.”
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="/assets/images/photo-3.jpg" alt="Detailed texture or scenery—replace with your image" />
+        </figure>
       </div>
+
+      <!-- <p class="page-description">
+        Tip: accessibility matters—give every <code>&lt;img&gt;</code> meaningful <code>alt</code>
+        text whether or not there is a visible caption underneath.
+      </p> -->
     </main>
 
     <script src="/js/script.js"></script>
   </body>
 </html>
-
